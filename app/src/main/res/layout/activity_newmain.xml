@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:id="@+id/activitymainRoot"
+	android:background="#FF505050">
+
+	<View
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		android:focusableInTouchMode="true"/>
+
+	<ScrollView
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:gravity="center_horizontal">
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center_horizontal"
+				android:background="#FFF2A1F2">
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:gravity="center">
+
+					<ImageView
+						android:src="@drawable/ic_launcher"
+						android:layout_width="30dp"
+						android:layout_height="30dp"
+						android:id="@+id/datailsicon"
+						android:layout_margin="5dp"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:orientation="vertical"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:gravity="left|center">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="RareBox"
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:maxLines="1"
+						android:id="@+id/datailsname"
+						android:typeface="normal"
+						android:textColor="#FFFFFFFF"/>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="60dp"
+				android:gravity="center"
+				android:id="@+id/grant">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="未授予储存权限，点击授权"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:textColor="#FFFFF472"
+					android:padding="10dp"
+					android:background="#FF868686"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:minHeight="40dp"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:id="@+id/ins"
+				android:background="?android:attr/selectableItemBackground">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="安装软件"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:textColor="#FFFFFFFF"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:minHeight="40dp"
+				android:gravity="center"
+				android:id="@+id/cmds"
+				android:background="?android:attr/selectableItemBackground">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="常用命令"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:textColor="#FFFFFFFF"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:minHeight="40dp"
+				android:gravity="center"
+				android:id="@+id/command"
+				android:background="?android:attr/selectableItemBackground">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="终端"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:textColor="#FFFFFFFF"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:minHeight="40dp"
+				android:gravity="center"
+				android:id="@+id/fullver"
+				android:background="?android:attr/selectableItemBackground">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="完整功能"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:textColor="#FFFFFFFF"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:minHeight="40dp"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:id="@+id/rare"
+				android:background="?android:attr/selectableItemBackground">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="访问Rare计划官网"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:textColor="#FFFFFFFF"/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="https://rare.genouka.rr.nu/"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:minHeight="40dp"
+				android:gravity="center"
+				android:id="@+id/updatelog"
+				android:background="?android:attr/selectableItemBackground">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="更新日志"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:textColor="#FFFFFFFF"/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_height="wrap_content"
+					android:id="@+id/activitymainVersionLabel"
+					android:gravity="center"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:minHeight="40dp"
+				android:gravity="center"
+				android:id="@+id/duty"
+				android:background="?android:attr/selectableItemBackground">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="免责声明"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:textColor="#FFFFFFFF"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:minHeight="40dp"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:id="@+id/quit"
+				android:background="?android:attr/selectableItemBackground">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="强行结束"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:textColor="#FFFFFFFF"/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="出了奇怪的问题就试一试"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"/>
+
+			</LinearLayout>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="温馨提示：在本界面下调试的是本机。本软件是免费软件，官方发布渠道：哔哩哔哩Genouka，Rare计划官网，小问商店。如非以上渠道下载请小心恶意代码，如果是收费下载则为受骗上当，产生经济纠纷与开发者无关。另外，开发者是学生，如果喜欢本软件欢迎前往Rare计划官网捐助。"
+				android:layout_margin="15dp"
+				android:typeface="serif"
+				android:textColor="#FFFFBDFF"
+				android:background="#FF4B4B4B"/>
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="140dp">
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</ScrollView>
+
+</LinearLayout>
+

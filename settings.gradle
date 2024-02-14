@@ -1,0 +1,4 @@
+include ':app'
+include ':FilePicker'
+include ':Common'
+rootProject.name = "RareBox"

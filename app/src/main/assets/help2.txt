@@ -1,0 +1,4 @@
+本功能只支持本机使用。
+本机调试别机可以先在目标手表安装RareBox最新版再在目标机使用。
+
+点击确定后将把可执行文件文件复制到/data/local/tmp文件夹下，在终端执行命令后将配置好使用环境，可以直接在任意目录运行busybox,openssl,adb,fastboot,curl,curl-config等可执行文件

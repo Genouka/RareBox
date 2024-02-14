@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="center">
+
+	<ScrollView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:gravity="center">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="本地文件路径"/>
+
+			<EditText
+				android:layout_width="match_parent"
+				android:ems="10"
+				android:layout_height="wrap_content"
+				android:id="@+id/sendfiledialogEditText1"
+				android:text="/sdcard/app.apk"
+				android:typeface="monospace"
+				android:textSize="10sp"/>
+
+			<Button
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="浏览文件..."
+				android:id="@+id/sendfiledialogButtonVisit"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="远程文件(完整路径,包括文件名!)"/>
+
+			<EditText
+				android:layout_width="match_parent"
+				android:ems="10"
+				android:layout_height="wrap_content"
+				android:id="@+id/sendfiledialogEditText2"
+				android:text="/sdcard/app.apk"
+				android:typeface="monospace"
+				android:textSize="10sp"/>
+
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="在传输完成后安装"
+				android:id="@+id/sendfiledialogCheckBox1"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="如果网络不稳定会传输失败，如果总是传输失败换个网好的环境再试试。"/>
+
+		</LinearLayout>
+
+	</ScrollView>
+
+</LinearLayout>
+

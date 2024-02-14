@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:id="@+id/activitymainRoot">
+
+	<ScrollView
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:gravity="center_horizontal">
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center_horizontal"
+				android:background="#FF1D1D1D">
+
+				<LinearLayout
+					android:orientation="vertical"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:gravity="left|center">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="ᐊ悬浮窗"
+						android:textAppearance="?android:attr/textAppearanceLarge"
+						android:maxLines="1"
+						android:id="@+id/datailsname"
+						android:typeface="sans"/>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="60dp"
+				android:gravity="center"
+				android:id="@+id/open"
+				android:background="?android:attr/selectableItemBackground">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="开启悬浮窗"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:textColor="#FFFFFFFF"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="60dp"
+				android:gravity="center"
+				android:id="@+id/close"
+				android:background="?android:attr/selectableItemBackground">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="关闭悬浮窗"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:textColor="#FFFFFFFF"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="60dp"
+				android:gravity="center"
+				android:id="@+id/reset"
+				android:background="?android:attr/selectableItemBackground">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="重置悬浮窗位置"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:textColor="#FFFFFFFF"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="100dp">
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</ScrollView>
+
+</LinearLayout>
+

@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:id="@+id/activitymainRoot"
+	android:background="#FF42648F">
+
+	<View
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		android:focusableInTouchMode="true"/>
+
+	<ScrollView
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:gravity="center_horizontal">
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center_horizontal"
+				android:background="#FF1D1D1D">
+
+				<LinearLayout
+					android:orientation="vertical"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:gravity="left|center">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="RareBox"
+						android:textAppearance="?android:attr/textAppearanceSmall"
+						android:maxLines="1"
+						android:id="@+id/datailsname"
+						android:typeface="sans"
+						android:textColor="#FFFFFFFF"/>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:typeface="serif"
+				android:layout_height="wrap_content"
+				android:background="#FF535353"
+				android:id="@+id/activitymainVersionLabel"
+				android:gravity="center"
+				android:textColor="#FFFFFFFF"/>
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="60dp"
+				android:gravity="center"
+				android:id="@+id/grant"
+				android:background="?android:attr/selectableItemBackground">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="获取必要权限"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:textColor="#FFFFFFFF"/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="重新下载和安装后需要重新获取权限"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center_horizontal"
+				android:background="#FFD67940"
+				android:layout_margin="10dp">
+
+				<LinearLayout
+					android:orientation="vertical"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="先设置地址再使用以下功能(长按显示历史记录。详细教程请参见Rare计划官网)"
+						android:textColor="#FFFFFFFF"/>
+
+					<EditText
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:text="127.0.0.1:5555"
+						android:id="@+id/activitymainEditText1"
+						android:inputType="text"
+						android:typeface="monospace"/>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:minHeight="60dp"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:id="@+id/ins"
+				android:background="?android:attr/selectableItemBackground">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="安装软件"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:textColor="#FFFFFFFF"/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="文件需在被调试机器上，输入的文件路径是被调试机器的。"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:minHeight="60dp"
+				android:gravity="center"
+				android:id="@+id/cmds"
+				android:background="?android:attr/selectableItemBackground">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="常用终端命令"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:textColor="#FFFFFFFF"/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="管理屏幕，电池，软件，等等"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:minHeight="60dp"
+				android:gravity="center"
+				android:id="@+id/rfile"
+				android:background="?android:attr/selectableItemBackground">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="从主动机传输文件"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:textColor="#FFFFFFFF"/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="目前只支持从本机向别机"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:minHeight="60dp"
+				android:gravity="center"
+				android:id="@+id/command"
+				android:background="?android:attr/selectableItemBackground">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="adb终端"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:textColor="#FFFFFFFF"/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="供高水平用户和开发者使用"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"/>
+
+			</LinearLayout>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="支持与帮助"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:background="#FFCCD9E2"
+				android:gravity="center"
+				android:textColor="#FF000000"/>
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:minHeight="60dp"
+				android:gravity="center"
+				android:id="@+id/author"
+				android:background="?android:attr/selectableItemBackground">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Bilibili:Genouka"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:textColor="#FFFFFFFF"/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="给个三连支持一下吧！腕上哔哩不支持直接打开，还请麻烦自行搜索Genouka"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:minHeight="60dp"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:id="@+id/rare"
+				android:background="?android:attr/selectableItemBackground">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Rare计划官网"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:textColor="#FFFFFFFF"/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="官方网站：https://rare.genouka.rr.nu/"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:minHeight="60dp"
+				android:gravity="center"
+				android:id="@+id/updatelog"
+				android:background="?android:attr/selectableItemBackground">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="更新日志"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:textColor="#FFFFFFFF"/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:text="更新RareBox在常用命令里喵！"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:minHeight="60dp"
+				android:gravity="center"
+				android:id="@+id/duty"
+				android:background="?android:attr/selectableItemBackground">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="免责声明"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:textColor="#FFFFFFFF"/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:text="此内容必读！使用本软件的功能则代表您完全理解并同意该声明，否则请以常规方式将本软件从你的计算机移除"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:minHeight="60dp"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:id="@+id/quit"
+				android:background="?android:attr/selectableItemBackground">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="强行结束本软件进程"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:textColor="#FFFFFFFF"/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="如果出了奇怪的问题可以试一试"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:id="@+id/grant"
+				android:layout_margin="10dp"
+				android:background="#FFAD6ECE"
+				android:minHeight="60dp">
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="实验性功能"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:textColor="#FF000000"
+					android:gravity="center"
+					android:background="#FFCCD9E2"/>
+
+				<Switch
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="华为手表专用安装模式"
+					android:id="@+id/activitymainSwitchHuawei"/>
+
+				<Switch
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="新版界面模式（仅手表适用！！！）"
+					android:id="@+id/activitymainSwitchNewmain"/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="实验性功能可能存在诸多问题，请谨慎开启。如果您遇到任何问题，希望可以提供反馈！这有助于修复各种隐藏问题"/>
+
+			</LinearLayout>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="温馨提示：本软件是免费软件，官方发布渠道：哔哩哔哩Genouka，Rare计划官网，小问商店。如非以上渠道下载请小心恶意代码，如果是收费下载则为受骗上当，产生经济纠纷与开发者无关。另外，开发者是学生，如果喜欢本软件欢迎前往Rare计划官网捐助。"
+				android:layout_margin="10dp"
+				android:typeface="serif"
+				android:textColor="#FFFFFF00"/>
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="200dp">
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</ScrollView>
+
+</LinearLayout>
+

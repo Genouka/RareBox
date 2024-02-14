@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:padding="25dp">
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:text="qwq.软件崩溃了!下面是错误信息!请在交流群报告开发者!"
+			android:layout_weight="1.0"
+			android:typeface="monospace"
+			android:gravity="center_vertical"/>
+
+	</LinearLayout>
+
+	<EditText
+		android:layout_width="match_parent"
+		android:inputType="textMultiLine"
+		android:layout_height="match_parent"
+		android:id="@+id/activityerrorEditText1"
+		android:hint="你当然可以写一写复现步骤再反馈"
+		android:gravity="top"
+		android:textSize="10sp"
+		android:typeface="monospace"/>
+
+</LinearLayout>
+
