@@ -1,6 +1,9 @@
 # RareBox
 **一个完全开源免费的WearOS手表和Android调试工具箱。麻雀虽小五脏俱全！**
 
+![RareBox](https://github.com/Genouka/RareBox/assets/142009020/90a9719c-9f8e-4d96-a1a2-4c9b7902841b)
+
+
 很抱歉我把许可证和贡献提到在前面，但如果我不这么做，没有人会去认真看。
 
 如果你要查看其他内容，请往下多翻一下。
